@@ -2,11 +2,11 @@ FROM node:8.4-alpine
 
 WORKDIR /var/nodejscode
 
-COPY package.json .
+# COPY package.json .
 
-RUN npm install
+RUN npm install -g pm2
 
-COPY . .
+# COPY . .
 
 EXPOSE 80
 
