@@ -6,7 +6,7 @@ WORKDIR /var/nodejscode
 
 RUN npm install -g pm2
 
-# COPY . .
+COPY . .
 
 EXPOSE 80
 
